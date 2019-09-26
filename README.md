@@ -1,10 +1,10 @@
 <p align="center">
-    <img src="https://i.imgur.com/VeEYEkT.png" alt="Hacker roadmap" /><br>
+    <img src="https://i.imgur.com/VeEYEkT.png" alt="Hacker roadmap" /><br>
 </p>
 
 ----
 
-This repository is an overview of what you need to learn penetration testing and a collection of hacking tools, resources and references to practice ethical hacking. Most of the tools are UNIX compatible, free and open source.
+This repository is an overview of what you need to learn penetration testing and a collection of hacking tools, resources, and references to practice ethical hacking. Most of the tools are UNIX compatible, free and open source.
 
 ## Before you start
 
@@ -18,28 +18,28 @@ This repository is an overview of what you need to learn penetration testing and
 # Table of Contents
 
 - [Introduction](#introduction)
-  - [What is penetration testing?](#what-is-penetration-testing)
-  - [Want to become a penetration tester?](#want-to-become-a-penetration-tester)
+  - [What is penetration testing?](#what-is-penetration-testing)
+  - [Want to become a penetration tester?](#want-to-become-a-penetration-tester)
 - [Some vocabulary](#some-vocabulary)
 - [Difference between hacking and ethical hacking](#difference-between-hacking-and-ethical-hacking)
 - [Languages](#languages)
 - [Content Management Systems](#content-management-systems)
 - [Basic steps of pen testing](#basic-steps-of-pen-testing)
 - [Tools by category](#tools-by-category)
-  - [:male_detective: Information Gathering](#male_detective-information-gathering)
-  - [:lock: Password Attacks](#lock-password-attacks)
-    - [:memo: Wordlists](#memo-wordlists)
-  - [:globe_with_meridians: Wireless Testing](#globe_with_meridians-wireless-testing)
-  - [:wrench: Exploitation Tools](#wrench-exploitation-tools)
-  - [:busts_in_silhouette: Sniffing & Spoofing](#busts_in_silhouette-sniffing--spoofing)
-  - [:rocket: Web Hacking](#rocket-web-hacking)
-  - [:tada: Post Exploitation](#tada-post-exploitation)
-  - [:package: Frameworks](#package-frameworks)
+  - [:male_detective: Information Gathering](#male_detective-information-gathering)
+  - [:lock: Password Attacks](#lock-password-attacks)
+    - [:memo: Wordlists](#memo-wordlists)
+  - [:globe_with_meridians: Wireless Testing](#globe_with_meridians-wireless-testing)
+  - [:wrench: Exploitation Tools](#wrench-exploitation-tools)
+  - [:busts_in_silhouette: Sniffing & Spoofing](#busts_in_silhouette-sniffing--spoofing)
+  - [:rocket: Web Hacking](#rocket-web-hacking)
+  - [:tada: Post Exploitation](#tada-post-exploitation)
+  - [:package: Frameworks](#package-frameworks)
 - [Additional resources](#additional-resources)
-  - [Books / Manuals](#books--manuals)
-  - [Discussions](#discussions)
-  - [Security Advisories](#security-advisories)
-  - [Challenges](#challenges)
+  - [Books / Manuals](#books--manuals)
+  - [Discussions](#discussions)
+  - [Security Advisories](#security-advisories)
+  - [Challenges](#challenges)
 - [License](#license)
 
 (TOC made with [nGitHubTOC](https://imthenachoman.github.io/nGitHubTOC/))
@@ -54,11 +54,11 @@ If a system is not secured, then any attacker can disrupt or take authorized acc
 
 ## Want to become a penetration tester?
 
-Know about risks on the internet and how they can be prevented is very useful. Especially as a developer. Web hacking and penetration testing is the v2.0 of self-defense! But does know about tools and how to use them is really all you need to become a pen tester? Surely not. A real penetration tester must be able to proceed rigorously and detect the weaknesses of an application. He must be able to identify the technology behind and test every single door that might be open to hackers.
+Know about risks on the internet and how they can be prevented is very useful. Especially as a developer. Web hacking and penetration testing is the v2.0 of self-defense! But does know about tools and how to use them is really all you need to become a pentester? Surely not. A real penetration tester must be able to proceed rigorously and detect the weaknesses of an application. He must be able to identify the technology behind and test every single door that might be open to hackers.
 
-This repository aim first to establish a reflection method on penetration testing and explain how to proceed to secure an application. And secondly, to regroup all kind of tools or resources pen testers need. **Be sure to know basics of programming languages and Internet security before learning pen testing.**
+This repository aim first to establish a reflection method on penetration testing and explain how to proceed to secure an application. And secondly, to regroup all kind of tools or resources pen testers need. **Be sure to know basics of programming languages and Internet security before learning pen-testing.**
 
-Also, this is important to inform yourself about the law and what you are allowed to do or not. According to your country, the computer laws are not the same. First, check laws about privacy and surveillance : [Nine eyes countries](https://en.wikipedia.org/wiki/Five_Eyes#Other_international_cooperatives), [Five eyes](https://en.wikipedia.org/wiki/Five_Eyes) and Fourteen Eyes. Always check if what you're doing is legal. Even when it's not offensive, information gathering can also be illegal!
+Also, this is important to inform yourself about the law and what you are allowed to do or not. According to your country, computer laws are not the same. First, check laws about privacy and surveillance : [Nine eyes countries](https://en.wikipedia.org/wiki/Five_Eyes#Other_international_cooperatives), [Five eyes](https://en.wikipedia.org/wiki/Five_Eyes) and Fourteen Eyes. Always check if what you're doing is legal. Even when it's not offensive, information gathering can also be illegal!
 
 ([Table of Contents](#table-of-contents))
 
@@ -68,7 +68,7 @@ Also, this is important to inform yourself about the law and what you are allowe
 
 **Opsec** : Operations security, which is a process that identifies critical information to determine if friendly actions can be observed by enemy intelligence, determines if information obtained by adversaries could be interpreted to be useful to them, and then executes selected measures that eliminate or reduce adversary exploitation of friendly critical information. [Wikipedia](https://en.wikipedia.org/wiki/Operations_security)
 
-**Black/grey/white hat hacker** : Someone who uses bugs or exploits to break into systems or applications. The goal and the method differs depending if he's a black, grey or white hat hacker. A black hat is just someone malicious that does not wait permission to break into a system or application. A white hat is *usually* a security researcher who practice ethical hacking. A grey hat is just in the middle of these two kind of hackers, he might want to be malicious if it can be benefit (data breach, money, whistleblowing ...).
+**Black/grey/white hat hacker** : Someone who uses bugs or exploits to break into systems or applications. The goal and the method differ depending on if he's a black, grey or white-hat hacker. A black hat is just someone malicious that does not wait for permission to break into a system or application. A white hat is *usually* a security researcher who practices ethical hacking. A grey hat is just in the middle of these two kinds of hackers, he might want to be malicious if it can benefit (data breach, money, whistleblowing ...).
 
 **Red team** : According to Wikipedia, a red team or the red team is an independent group that challenges an organization to improve its effectiveness by assuming an adversarial role or point of view. It is particularly effective in organizations with strong cultures and fixed ways of approaching problems. The United States intelligence community (military and civilian) has red teams that explore alternative futures and write articles as if they were foreign world leaders. Little formal doctrine or publications about Red Teaming in the military exist. In infosec exercises, Red teamers are playing the role of attackers. [Wikipedia](https://en.wikipedia.org/wiki/Red_team)
 
@@ -80,7 +80,7 @@ Also, this is important to inform yourself about the law and what you are allowe
 
 **Reverse engineering** : Reverse engineering, also called back engineering, is the process by which a man-made object is deconstructed to reveal its designs, architecture, or to extract knowledge from the object. Similar to scientific research, the only difference being that scientific research is about a natural phenomenon. [Wikipedia](https://en.wikipedia.org/wiki/Reverse_engineering)
 
-**Social engineering** : In the context of information security, it refers to psychological manipulation of people into performing actions or divulging confidential information. A type of confidence trick for the purpose of information gathering, fraud, or system access, it differs from a traditional "con" in that it is often one of many steps in a more complex fraud scheme. The term "social engineering" as an act of psychological manipulation of a human, is also associated with the social sciences, but its usage has caught on among computer and information security professionals. [Wikipedia](https://en.wikipedia.org/wiki/Social_engineering_(security))
+**Social engineering** : In the context of information security, it refers to psychological manipulation of people into performing actions or divulging confidential information. A type of confidence trick for information gathering, fraud, or system access, it differs from a traditional "con" in that it is often one of many steps in a more complex fraud scheme. The term "social engineering" as an act of psychological manipulation of a human, is also associated with the social sciences, but its usage has caught on among computer and information security professionals. [Wikipedia](https://en.wikipedia.org/wiki/Social_engineering_(security))
 
 **Threat analyst** : A threat hunter, also called a cybersecurity threat analyst, is a security professional or managed service provider (MSP) that proactively uses manual or machine-assisted techniques to detect security incidents that may elude the grasp of automated systems. Threat hunters aim to uncover incidents that an enterprise would otherwise not find out about, providing chief information security officers (CISOs) and chief information officers (CIOs) with an additional line of defense against advanced persistent threats (APTs). [SearchCIO](https://searchcio.techtarget.com/definition/threat-hunter-cybersecurity-threat-analyst)
 
@@ -88,7 +88,7 @@ Also, this is important to inform yourself about the law and what you are allowe
 
 # Difference between hacking and ethical hacking
 
-A black hat is practicing penetration testing, but unlike a white hat, this is not ethical hacking. Ethical hacking is about find vulnerabilities and improve the security of a system. An ethical hacker is the ultimate security professional. Ethical hackers know how to find and exploit vulnerabilities and weaknesses in various systems, just like a malicious hacker (a black hat hacker). In fact, they both use the same skills; however, an ethical hacker uses those skills in a legitimate, lawful manner to try to find vulnerabilities and fix them before the bad guys can get there and try to break in. An ethical hacker is basically a white hat hacker.
+A black hat is practicing penetration testing, but unlike a white hat, this is not ethical hacking. Ethical hacking is about finding vulnerabilities and improve the security of a system. An ethical hacker is an ultimate security professional. Ethical hackers know how to find and exploit vulnerabilities and weaknesses in various systems, just like a malicious hacker (a black hat hacker). In fact, they both use the same skills; however, an ethical hacker uses those skills in a legitimate, lawful manner to try to find vulnerabilities and fix them before the bad guys can get there and try to break in. An ethical hacker is basically a white hat hacker.
 
 ([Table of Contents](#table-of-contents))
 
@@ -119,7 +119,7 @@ These are the most used Content Management Systems (CMS). See a complete list [h
 # Basic steps of pen testing
 
 <p align="center">
-    <img src="https://www.tutorialspoint.com/penetration_testing/images/penetration_testing_method.jpg">
+    <img src="https://www.tutorialspoint.com/penetration_testing/images/penetration_testing_method.jpg">
 </p>
 
 ([Table of Contents](#table-of-contents))
@@ -128,117 +128,117 @@ These are the most used Content Management Systems (CMS). See a complete list [h
 
 #### :male_detective: Information Gathering
 
-Information Gathering tools allows you to collect host metadata about services and users. Check informations about a domain, IP address, phone number or an email address.
+Information Gathering tools allow you to collect host metadata about services and users. Check information about a domain, IP address, phone number or an email address.
 
-| Tool        | Language           | Support  | Description    |
+| Tool        | Language           | Support  | Description    |
 | ----------- |-------------------------|----------|----------------|
-| [Th3inspector](https://github.com/Moham3dRiahi/Th3inspector)      | **Perl** | `Linux/Windows/macOS` | All in one tool for Information Gathering written in Perl. |
-| [Crips](https://github.com/Manisso/Crips)      | **Python** | `Linux/Windows/macOS` | IP Tools To quickly get information about IP Address's, Web Pages and DNS records. |
-| [theHarvester](https://github.com/laramies/theHarvester)      | **Python** | `Linux/Windows/macOS` | E-mails, subdomains and names Harvester. |
-| [Scanless](https://github.com/vesche/scanless)      | **Python** | `Linux/Windows/macOS` | Online port scan scraper. |
-| [CTFR](https://github.com/UnaPibaGeek/ctfr)      | **Python** | `Linux/Windows/macOS` | Abusing Certificate Transparency logs for getting HTTPS websites subdomains. |
-| [Sn1per](https://github.com/1N3/Sn1per)      | **bash** | `Linux/macOS` | Automated Pentest Recon Scanner. |
-| [ReconDog](https://github.com/s0md3v/ReconDog)      | **Python** | `Linux/Windows/macOS` | Recon Dog is an all in one tool for all your basic information gathering needs. |
-| [RED Hawk](https://github.com/Tuhinshubhra/RED_HAWK)      | **PHP** | `Linux/Windows/macOS` | All in one tool for Information Gathering, Vulnerability Scanning and Crawling. A must have tool for all penetration testers. |
-| [Infoga](https://github.com/m4ll0k/Infoga)      | **Python** | `Linux/Windows/macOS` | Email Information Gathering. |
-| [KnockMail](https://github.com/4w4k3/KnockMail)      | **Python** | `Linux/Windows/macOS` | Check if email address exists. |
-| [Photon](https://github.com/s0md3v/Photon)      | **Python** | `Linux/Windows/macOS` | Crawler which is incredibly fast and extracts urls, emails, files, website accounts and much more. |
-| [Rapidscan](https://github.com/skavngr/rapidscan)      | **Python** | `Linux/Windows/macOS` | The Multi-Tool Web Vulnerability Scanner. |
-| [a2sv](https://github.com/hahwul/a2sv)      | **Python** | `Linux/Windows/macOS` | Auto Scanning to SSL Vulnerability. |
-| [Wfuzz](https://github.com/xmendez/wfuzz)      | **Python** | `Linux/Windows/macOS` | Web application fuzzer. |
-| [Nmap](https://github.com/nmap/nmap)      | **C/C++** | `Linux/Windows/macOS` | Scanner ports vulnerability. |
-| [Dracnmap](https://github.com/Screetsec/Dracnmap)      | **Shell** | `Linux/Windows/macOS` | open source program which is using to exploit the network and gathering information with nmap | 
+| [Th3inspector](https://github.com/Moham3dRiahi/Th3inspector)      | **Perl** | `Linux/Windows/macOS` | All in one tool for Information Gathering written in Perl. |
+| [Crips](https://github.com/Manisso/Crips)      | **Python** | `Linux/Windows/macOS` | IP Tools To quickly get information about IP Address's, Web Pages and DNS records. |
+| [theHarvester](https://github.com/laramies/theHarvester)      | **Python** | `Linux/Windows/macOS` | E-mails, subdomains and names Harvester. |
+| [Scanless](https://github.com/vesche/scanless)      | **Python** | `Linux/Windows/macOS` | Online port scan scraper. |
+| [CTFR](https://github.com/UnaPibaGeek/ctfr)      | **Python** | `Linux/Windows/macOS` | Abusing Certificate Transparency logs for getting HTTPS websites subdomains. |
+| [Sn1per](https://github.com/1N3/Sn1per)      | **bash** | `Linux/macOS` | Automated Pentest Recon Scanner. |
+| [ReconDog](https://github.com/s0md3v/ReconDog)      | **Python** | `Linux/Windows/macOS` | Recon Dog is an all in one tool for all your basic information gathering needs. |
+| [RED Hawk](https://github.com/Tuhinshubhra/RED_HAWK)      | **PHP** | `Linux/Windows/macOS` | All in one tool for Information Gathering, Vulnerability Scanning and Crawling. A must have tool for all penetration testers. |
+| [Infoga](https://github.com/m4ll0k/Infoga)      | **Python** | `Linux/Windows/macOS` | Email Information Gathering. |
+| [KnockMail](https://github.com/4w4k3/KnockMail)      | **Python** | `Linux/Windows/macOS` | Check if email address exists. |
+| [Photon](https://github.com/s0md3v/Photon)      | **Python** | `Linux/Windows/macOS` | Crawler which is incredibly fast and extracts urls, emails, files, website accounts and much more. |
+| [Rapidscan](https://github.com/skavngr/rapidscan)      | **Python** | `Linux/Windows/macOS` | The Multi-Tool Web Vulnerability Scanner. |
+| [a2sv](https://github.com/hahwul/a2sv)      | **Python** | `Linux/Windows/macOS` | Auto Scanning to SSL Vulnerability. |
+| [Wfuzz](https://github.com/xmendez/wfuzz)      | **Python** | `Linux/Windows/macOS` | Web application fuzzer. |
+| [Nmap](https://github.com/nmap/nmap)      | **C/C++** | `Linux/Windows/macOS` | Scanner ports vulnerability. |
+| [Dracnmap](https://github.com/Screetsec/Dracnmap)      | **Shell** | `Linux/Windows/macOS` | open source program which is using to exploit the network and gathering information with nmap | 
 
 #### :lock: Password Attacks
 
 Crack passwords and create wordlists.
 
-| Tool        | Language           | Support  | Description    |
+| Tool        | Language           | Support  | Description    |
 | ----------- |-------------------------|----------|----------------|
-| [John the Ripper](https://github.com/magnumripper/JohnTheRipper)      | **C** | `Linux/Windows/macOS` | John the Ripper is a fast password cracker. |
-| [hashcat](https://github.com/hashcat/hashcat)      | **C** | `Linux/Windows/macOS` | World's fastest and most advanced password recovery utility. |
-| [Hydra](https://github.com/vanhauser-thc/thc-hydra)      | **C** | `Linux/Windows/macOS` | Parallelized login cracker which supports numerous protocols to attack.￼ |
-| [ophcrack](https://gitlab.com/objectifsecurite/ophcrack)      | **C++** | `Linux/Windows/macOS` | Windows password cracker based on rainbow tables. |
-| [Ncrack](https://github.com/nmap/ncrack)      | **C** | `Linux/Windows/macOS` | High-speed network authentication cracking tool. |
-| [WGen](https://github.com/agusmakmun/Python-Wordlist-Generator)      | **Python** | `Linux/Windows/macOS` | Create awesome wordlists with Python. |
-| [SSH Auditor](https://github.com/ncsa/ssh-auditor)      | **Go** | `Linux/macOS` | The best way to scan for weak ssh passwords on your network. |
+| [John the Ripper](https://github.com/magnumripper/JohnTheRipper)      | **C** | `Linux/Windows/macOS` | John the Ripper is a fast password cracker. |
+| [hashcat](https://github.com/hashcat/hashcat)      | **C** | `Linux/Windows/macOS` | World's fastest and most advanced password recovery utility. |
+| [Hydra](https://github.com/vanhauser-thc/thc-hydra)      | **C** | `Linux/Windows/macOS` | Parallelized login cracker which supports numerous protocols to attack.￼ |
+| [ophcrack](https://gitlab.com/objectifsecurite/ophcrack)      | **C++** | `Linux/Windows/macOS` | Windows password cracker based on rainbow tables. |
+| [Ncrack](https://github.com/nmap/ncrack)      | **C** | `Linux/Windows/macOS` | High-speed network authentication cracking tool. |
+| [WGen](https://github.com/agusmakmun/Python-Wordlist-Generator)      | **Python** | `Linux/Windows/macOS` | Create awesome wordlists with Python. |
+| [SSH Auditor](https://github.com/ncsa/ssh-auditor)      | **Go** | `Linux/macOS` | The best way to scan for weak ssh passwords on your network. |
 
 ###### :memo: Wordlists
 
-| Tool        | Description    |
+| Tool        | Description    |
 | ----------- |----------------|
-| [Probable Worlist](https://github.com/berzerk0/Probable-Wordlists)      | Wordlists sorted by probability originally created for password generation and testing. |
+| [Probable Worlist](https://github.com/berzerk0/Probable-Wordlists)      | Wordlists sorted by probability originally created for password generation and testing. |
 
 #### :globe_with_meridians: Wireless Testing
 
 Used for intrusion detection and wifi attacks.
 
-| Tool        | Language           | Support  | Description    |
+| Tool        | Language           | Support  | Description    |
 | ----------- |-------------------------|----------|----------------|
-| [Aircrack](https://github.com/aircrack-ng/aircrack-ng)      | **C** | `Linux/Windows/macOS` | WiFi security auditing tools suite. |
-| [bettercap](https://github.com/bettercap/bettercap)      | **Go** | `Linux/Windows/macOS/Android` | bettercap is the Swiss army knife for network attacks and monitoring. |
-| [WiFi Pumpkin](https://github.com/P0cL4bs/WiFi-Pumpkin)      | **Python** | `Linux/Windows/macOS/Android` | Framework for Rogue Wi-Fi Access Point Attack.￼ |
-| [Airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)      | **Shell** | `Linux/Windows/macOS` | This is a multi-use bash script for Linux systems to audit wireless networks. |
-| [Airbash](https://github.com/tehw0lf/airbash)      | **C** | `Linux/Windows/macOS` | A POSIX-compliant, fully automated WPA PSK handshake capture script aimed at penetration testing. |
+| [Aircrack](https://github.com/aircrack-ng/aircrack-ng)      | **C** | `Linux/Windows/macOS` | WiFi security auditing tools suite. |
+| [bettercap](https://github.com/bettercap/bettercap)      | **Go** | `Linux/Windows/macOS/Android` | bettercap is the Swiss army knife for network attacks and monitoring. |
+| [WiFi Pumpkin](https://github.com/P0cL4bs/WiFi-Pumpkin)      | **Python** | `Linux/Windows/macOS/Android` | Framework for Rogue Wi-Fi Access Point Attack.￼ |
+| [Airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)      | **Shell** | `Linux/Windows/macOS` | This is a multi-use bash script for Linux systems to audit wireless networks. |
+| [Airbash](https://github.com/tehw0lf/airbash)      | **C** | `Linux/Windows/macOS` | A POSIX-compliant, fully automated WPA PSK handshake capture script aimed at penetration testing. |
 
 #### :wrench: Exploitation Tools
 
-Acesss systems and data with service-oriented exploits.
+Access systems and data with service-oriented exploits.
 
-| Tool        | Language           | Support  | Description    |
+| Tool        | Language           | Support  | Description    |
 | ----------- |-------------------------|----------|----------------|
-| [SQLmap](https://github.com/sqlmapproject/sqlmap)      | **Python** | `Linux/Windows/macOS` | Automatic SQL injection and database takeover tool. |
-| [XSStrike](https://github.com/UltimateHackers/XSStrike)      | **Python** | `Linux/Windows/macOS` | Advanced XSS detection and exploitation suite. |
-| [Commix](https://github.com/commixproject/commix)      | **Python** | `Linux/Windows/macOS` | Automated All-in-One OS command injection and exploitation tool.￼ |
+| [SQLmap](https://github.com/sqlmapproject/sqlmap)      | **Python** | `Linux/Windows/macOS` | Automatic SQL injection and database takeover tool. |
+| [XSStrike](https://github.com/UltimateHackers/XSStrike)      | **Python** | `Linux/Windows/macOS` | Advanced XSS detection and exploitation suite. |
+| [Commix](https://github.com/commixproject/commix)      | **Python** | `Linux/Windows/macOS` | Automated All-in-One OS command injection and exploitation tool.￼ |
 
 #### :busts_in_silhouette: Sniffing & Spoofing
 
 Listen to network traffic or fake a network entity.
 
-| Tool        | Language           | Support  | Description    |
+| Tool        | Language           | Support  | Description    |
 | ----------- |-------------------------|----------|----------------|
-| [Wireshark](https://www.wireshark.org)      | **C/C++** | `Linux/Windows/macOS` | Wireshark is a network protocol analyzer. |
-| [WiFi Pumpkin](https://github.com/P0cL4bs/WiFi-Pumpkin)      | **Python** | `Linux/Windows/macOS/Android` | Framework for Rogue Wi-Fi Access Point Attack. |
-| [Zarp](https://github.com/hatRiot/zarp)      | **Python** | `Linux/Windows/macOS` | A free network attack framework. |
+| [Wireshark](https://www.wireshark.org)      | **C/C++** | `Linux/Windows/macOS` | Wireshark is a network protocol analyzer. |
+| [WiFi Pumpkin](https://github.com/P0cL4bs/WiFi-Pumpkin)      | **Python** | `Linux/Windows/macOS/Android` | Framework for Rogue Wi-Fi Access Point Attack. |
+| [Zarp](https://github.com/hatRiot/zarp)      | **Python** | `Linux/Windows/macOS` | A free network attack framework. |
 
 #### :rocket: Web Hacking
 
 Exploit popular CMSs that are hosted online.
 
-| Tool        | Language           | Support  | Description    |
+| Tool        | Language           | Support  | Description    |
 | ----------- |-------------------------|----------|----------------|
-| [WPScan](https://github.com/wpscanteam/wpscan)      | **Ruby** | `Linux/Windows/macOS` | WPScan is a black box WordPress vulnerability scanner. |
-| [Droopescan](https://github.com/droope/droopescan)      | **Python** | `Linux/Windows/macOS` | A plugin-based scanner to identify issues with several CMSs, mainly Drupal & Silverstripe. |
-| [Joomscan](https://github.com/rezasp/joomscan)      | **Perl** | `Linux/Windows/macOS` | Joomla Vulnerability Scanner. |
-| [Drupwn](https://github.com/immunIT/drupwn)      | **Python** | `Linux/Windows/macOS` | Drupal Security Scanner to perform enumerations on Drupal-based web applications. |
-| [Webpwn3r](https://github.com/zigoo0/webpwn3r)      | **Python** | `Linux/Windows/macOS` | Web Applications Security Scanner. |
-| [CMSeek](https://github.com/Tuhinshubhra/CMSeek)      | **Python** | `Linux/Windows/macOS` | CMS Detection and Exploitation suite - Scan WordPress, Joomla, Drupal and 130 other CMSs. |
+| [WPScan](https://github.com/wpscanteam/wpscan)      | **Ruby** | `Linux/Windows/macOS` | WPScan is a black box WordPress vulnerability scanner. |
+| [Droopescan](https://github.com/droope/droopescan)      | **Python** | `Linux/Windows/macOS` | A plugin-based scanner to identify issues with several CMSs, mainly Drupal & Silverstripe. |
+| [Joomscan](https://github.com/rezasp/joomscan)      | **Perl** | `Linux/Windows/macOS` | Joomla Vulnerability Scanner. |
+| [Drupwn](https://github.com/immunIT/drupwn)      | **Python** | `Linux/Windows/macOS` | Drupal Security Scanner to perform enumerations on Drupal-based web applications. |
+| [Webpwn3r](https://github.com/zigoo0/webpwn3r)      | **Python** | `Linux/Windows/macOS` | Web Applications Security Scanner. |
+| [CMSeek](https://github.com/Tuhinshubhra/CMSeek)      | **Python** | `Linux/Windows/macOS` | CMS Detection and Exploitation suite - Scan WordPress, Joomla, Drupal and 130 other CMSs. |
 
 #### :tada: Post Exploitation
 
 Exploits for after you have already gained access.
 
-| Tool        | Language           | Support  | Description    |
+| Tool        | Language           | Support  | Description    |
 | ----------- |-------------------------|----------|----------------|
-| [TheFatRat](https://github.com/Screetsec/TheFatRat)      | **Java** | `Linux/Windows/macOS` | Easy tool to generate backdoor and easy tool to post exploitation attack like browser attack, dll. |
-| [Microsploit](https://github.com/Screetsec/Microsploit)      | **Shell** | `Linux/Windows/macOS` | Fast and easy create backdoor office exploitation using module metasploit packet , Microsoft Office , Open Office , Macro attack , Buffer Overflow. |
+| [TheFatRat](https://github.com/Screetsec/TheFatRat)      | **Java** | `Linux/Windows/macOS` | Easy tool to generate backdoor and easy tool to post exploitation attack like browser attack, dll. |
+| [Microsploit](https://github.com/Screetsec/Microsploit)      | **Shell** | `Linux/Windows/macOS` | Fast and easy create backdoor office exploitation using module Metasploit packet, Microsoft Office, Open Office, Macro attack, Buffer Overflow. |
 
 #### :package: Frameworks
 
-Frameworks are packs of pen testing tools with custom shell navigation and documentation.
+Frameworks are packs of pen-testing tools with custom shell navigation and documentation.
 
-| Tool        | Language           | Support  | Description    |
+| Tool        | Language           | Support  | Description    |
 | ----------- |-------------------------|----------|----------------|
-| [Operative Framework](https://github.com/graniet/operative-framework)      | **Python** | `Linux/Windows/macOS` | Framework based on fingerprint action, this tool is used for get information on a website or a enterprise target with multiple modules. |
-| [Metasploit](https://github.com/rapid7/metasploit-framework)      | **Ruby** | `Linux/Windows/macOS` | A penetration testing framework for ethical hackers. |
-| [fsociety](https://github.com/Manisso/fsociety)      | **Python** | `Linux/Windows/macOS` | fsociety Hacking Tools Pack – A Penetration Testing Framework. |
-| [cSploit](https://github.com/cSploit/android)      | **Java** | `Android` | The most complete and advanced IT security professional toolkit on Android. |
-| [radare2](https://github.com/radare/radare2)      | **C** | `Linux/Windows/macOS/Android` | Unix-like reverse engineering framework and commandline tools. |
-| [Social Engineer Toolkit](https://github.com/trustedsec/social-engineer-toolkit)      | **Python** | `Linux/macOS` | Penetration testing framework designed for social engineering. |
-| [hate_crack](https://github.com/trustedsec/hate_crack)     | **Python** | `Linux/macOS` | A tool for automating cracking methodologies through Hashcat. |
-| [Wifiphisher](https://github.com/wifiphisher/wifiphisher)      | **Python** | `Linux` | The Rogue Access Point Framework. |
-| [Kickthemout](https://github.com/k4m4/kickthemout)      | **Python** | `Linux/macOS` | Kick devices off your network by performing an ARP Spoof attack. |
-| [Beef](https://github.com/beefproject/beef)      | **Javascript** | `Linux/Windows/macOS` | The Browser Exploitation Framework. It is a penetration testing tool that focuses on the web browser. |
+| [Operative Framework](https://github.com/graniet/operative-framework)      | **Python** | `Linux/Windows/macOS` | Framework based on fingerprint action, this tool is used for get information on a website or a enterprise target with multiple modules. |
+| [Metasploit](https://github.com/rapid7/metasploit-framework)      | **Ruby** | `Linux/Windows/macOS` | A penetration testing framework for ethical hackers. |
+| [fsociety](https://github.com/Manisso/fsociety)      | **Python** | `Linux/Windows/macOS` | fsociety Hacking Tools Pack – A Penetration Testing Framework. |
+| [cSploit](https://github.com/cSploit/android)      | **Java** | `Android` | The most complete and advanced IT security professional toolkit on Android. |
+| [radare2](https://github.com/radare/radare2)      | **C** | `Linux/Windows/macOS/Android` | Unix-like reverse engineering framework and commandline tools. |
+| [Social Engineer Toolkit](https://github.com/trustedsec/social-engineer-toolkit)      | **Python** | `Linux/macOS` | Penetration testing framework designed for social engineering. |
+| [hate_crack](https://github.com/trustedsec/hate_crack)     | **Python** | `Linux/macOS` | A tool for automating cracking methodologies through Hashcat. |
+| [Wifiphisher](https://github.com/wifiphisher/wifiphisher)      | **Python** | `Linux` | The Rogue Access Point Framework. |
+| [Kickthemout](https://github.com/k4m4/kickthemout)      | **Python** | `Linux/macOS` | Kick devices off your network by performing an ARP Spoof attack. |
+| [Beef](https://github.com/beefproject/beef)      | **Javascript** | `Linux/Windows/macOS` | The Browser Exploitation Framework. It is a penetration testing tool that focuses on the web browser. |
 
 ([Table of Contents](#table-of-contents))
 
@@ -263,7 +263,7 @@ Frameworks are packs of pen testing tools with custom shell navigation and docum
 
 ## Books / Manuals
 
-**Warning :** I haven't read them all so do not consider I am recommanding as I liked them. They just seem to provide useful resources.
+** Warning:** I haven't read them all so do not consider I am recommending as I liked them. They just seem to provide useful resources.
 
 - [Penetration Testing: A Hands-On Introduction to Hacking](https://www.amazon.com/Penetration-Testing-Hands-Introduction-Hacking/dp/1593275641) (2014)
 - [Kali Linux Revealed](https://www.amazon.com/Kali-Linux-Revealed-Penetration-Distribution/dp/0997615605) - [PDF](https://kali.training/downloads/Kali-Linux-Revealed-1st-edition.pdf) (2017)
